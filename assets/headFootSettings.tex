@@ -1,0 +1,41 @@
+% Setting to headers
+%\setlength\headheight{45pt} 
+%\setlength{\headsep}{1cm}
+
+\firstpageheadrule
+\firstpagefootrule
+\runningheadrule
+\runningfootrule
+
+%\renewcommand{\headrulewidth}{.4pt}
+%\renewcommand{\footrulewidth}{.4pt}
+
+\lhead{%
+    \fulllogo
+}
+\rhead{%
+    {\color{aybblack}\textbf{\campus}}\\
+    \textbf{\institute}\\
+    \textbf{\school}\\
+    {\if\empty\lawdecree\else{\lawdecree}\fi}\\
+    \vspace{-.1cm}
+}
+
+%\lfoot{%
+%    Aluno: \underline{%
+%        \makebox[2.5in]{%
+%            \ifnum\multiplestudents>1{\color{gray}Não precisa}\fi
+%        }
+%    }\hspace{1.5cm}Curso: \underline{\makebox[1.0in]{}}
+%}
+\cfoot{}
+\rfoot{%
+Halaman \thepage~dari \numpages%
+}
+\lfoot{%
+\emph{Ayo Kita Belajar \& Firman Fathul} 
+}
+
+\newcommand{\draftstyle}{%
+    \thispagestyle{head}
+} 

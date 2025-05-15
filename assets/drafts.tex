@@ -1,0 +1,32 @@
+\ifnum\draftpages=0
+\else{% 
+    \foreach \blank in {1,...,\draftpages} {%
+        \ifodd\numpages
+            \blankpage
+        \else\fi
+    
+        \newpage
+            \draftstyle
+            \BgThispage
+        
+            \begin{center}
+                \huge
+                \textbf{RASCUNHO}
+            \end{center}
+        
+            \vfill
+    
+            \begin{flushright}
+                \textbf{Aluno}: \underline{\makebox[2.7in]{
+                    \if\empty\student\else\student\fi
+                }}
+            \end{flushright}
+            
+            \clearpage
+            \addtocounter{page}{-1}%
+    
+        \blankpage
+    }%
+    %\makedrafts{\draftpages}
+}%
+\fi

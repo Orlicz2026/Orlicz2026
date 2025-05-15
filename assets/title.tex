@@ -1,0 +1,40 @@
+% =========
+% Exam Head
+% =========
+%\begin{minipage}{.65\textwidth}
+%    \large 
+%    \textbf{Ano Letivo}: \examyear\\
+%    \textbf{Tipo}: \type\\
+%   \if\course\empty\else{\textbf{Ciclo de Estudos}: 
+%        {\course} 
+%        {\footnotesize(\textbf{Qual o seu?})}\\}\fi
+%    \textbf{Unidade Curricular}: \UC\\
+%    \textbf{Semestre Curricular}: \semester º semestre\\
+%    \textbf{Docente}: \teacher\\
+%    \textbf{Aluno{\ifnum\multiplestudents>1{s}\fi}}:{{\color{white}a}\underline{\makebox[2.7in]{
+%        \if\empty\student\else\student\fi
+%   }}}
+%    \ifnum\multiplestudents=1{}\else{%
+%        \\
+%        \foreach \i in {2,...,\multiplestudents}{%
+%            {\color{white}\textbf{Alunos}: }\underline{\makebox[2.7in]{}}\\
+%        }%
+%    }\fi
+%\end{minipage}
+%\hspace{.1cm}
+%\begin{minipage}{.3\textwidth}
+%    \centering
+%    \textbf{Nota Final}\vspace{.25cm}\\
+%    \framebox(40, 40){}\vspace{.25cm}\\
+%    \textbf{Docente:}~\underline{\makebox[.7in]{}}
+%\end{minipage}
+
+% ==========
+% Exam Title
+% ==========
+\vspace{.25cm}
+\begin{center}
+    \Large \textbf{{\type} {\ifnum\typenumber=0{\!\!}\else\typenumber\fi} de \UC} \\ \subtitle
+\end{center}
+
+\vspace{.2cm}
