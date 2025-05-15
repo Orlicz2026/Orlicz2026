@@ -1,0 +1,12 @@
+\documentclass[10pt, a4paper]{exam}
+%\printanswers
+\noprintanswers
+\unframedsolutions
+\renewcommand{\solutiontitle}{\textbf{Solusi :}\,}
+\input{assets/settings}
+
+\begin{document}
+    %\input{assets/title}
+    \input{questions}
+    %\input{assets/drafts}
+\end{document} 
